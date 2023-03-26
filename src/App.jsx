@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Theme from "./styles/Theme";
-import { Header, Hero, MyProjects, Technologies, TimeLine, Acomplishments, Footer } from "./components";
+import { Header, Footer } from "./components";
+import Home from "./pages/Home";
 import './App.css'
 
 function App() {
@@ -9,13 +10,7 @@ function App() {
         <Theme>
             <BrowserRouter>
                 <div className="App">
-                    <Header />
-                    <Hero />
-                    <MyProjects />
-                    <Technologies />
-                    <TimeLine />
-                    <Acomplishments />
-                    <Footer />
+                    <Home />
                 </div>
             </BrowserRouter>
         </Theme>
