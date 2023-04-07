@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
-import { DiCssdeck } from "react-icons/di";
+import { RiAncientGateFill } from "react-icons/ri";
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons, Span, A } from "./HeaderStyles";
 
 const Header = () => (
@@ -8,35 +8,35 @@ const Header = () => (
         <Div1>
             <Link to="/">
                 <A>
-                    <DiCssdeck size="3.5rem" style={{marginRight: "0.4rem"}}/> <Span>Portfolio</Span>
+                    <RiAncientGateFill size="3.2rem" style={{marginRight: "1.8rem"}}/> <Span>Portfolio</Span>
                 </A>
             </Link>
         </Div1>
         <Div2>
             <li>
-                <Link to="#projects">
+                <A href="#projects">
                     <NavLink>Projects</NavLink>
-                </Link>
+                </A>
             </li>
             <li>
-                <Link to="#projects">
-                    <NavLink>Projects</NavLink>
-                </Link>
+                <A href="#tech">
+                    <NavLink>Technologies</NavLink>
+                </A>
             </li>
             <li>
-                <Link to="#about">
+                <A href="#about">
                     <NavLink>About</NavLink>
-                </Link>
+                </A>
             </li>
         </Div2>
         <Div3>
-            <SocialIcons href="https://github.com">
+            <SocialIcons href="https://github.com/Tomas-Garnero">
                 <AiFillGithub size="3rem" />
             </SocialIcons>
-            <SocialIcons href="https://linkedin.com">
+            <SocialIcons href="https://www.linkedin.com/in/tomas-garnero/">
                 <AiFillLinkedin size="3rem" />
             </SocialIcons>
-            <SocialIcons href="https://instagram.com">
+            <SocialIcons href="https://www.instagram.com/tomygarnero/">
                 <AiFillInstagram size="3rem" />
             </SocialIcons>
         </Div3>

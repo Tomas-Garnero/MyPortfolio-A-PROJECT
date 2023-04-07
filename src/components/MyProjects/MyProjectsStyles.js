@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Img = styled.img`
     width:100%;
-    height:100%;
+    height: 100%;
     object-fit: cover;
     overflow: hidden;
 `
@@ -10,7 +10,7 @@ export const Img = styled.img`
 export const GridContainer = styled.section`
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    padding: 3rem;
+    padding: 4.2rem;
     place-items: center;
     column-gap: 2rem;
     row-gap: 3rem;
@@ -38,18 +38,37 @@ export const TitleContent = styled.div`
     width: 100%;
 `;
 
+export const PTitle = styled.p`
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #9cc9e3;
+    font-size: ${(props) => props.title ? '3rem' : '2rem'};
+`;
+
 export const HeaderThree = styled.h3`
     font-weight: 500;
-    letter-spacing: 2px;
+    letter-spacing: 6px;
     color: #9cc9e3;
-    padding: .5rem 0;
+    padding: 1.8rem 0 ;
     font-size: ${(props) => props.title ? '3rem' : '2rem'};
 `;
 
 export const Hr = styled.hr`
     width: 50px;
     height: 3px;
-    margin: 20px auto;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    border: 0;
+    background: #d0bb57;
+`;
+
+export const Hr1 = styled.hr`
+    width: 50px;
+    height: 3px;
+    margin: 0px auto;
+    margin-bottom: 17.5px;
+    margin-top: 17.5px;
     border: 0;
     background: #d0bb57;
 `;
@@ -66,11 +85,10 @@ export const Intro = styled.div`
 
 export const CardInfo = styled.p`
     width: 100%;
-    padding: 0 50px;
+    padding: 0 40px;
     color: #e4e6e7;
     font-style: 2rem;
-    line-height: 24px;
-    text-align: justify;
+    line-height: 22px;
     @media ${(props) => props.theme.breakpoints.sm} {
         padding:.3rem
     
@@ -81,8 +99,8 @@ export const UtilityList = styled.ul`
     list-style-type: none;
     padding: 0;
     display: flex;
-    justify-content: space-around;
-    margin: 2.5rem 0;
+    justify-content: space-evenly;
+    margin: 1.5rem 0;
 `;
 
 export const ExternalLinks = styled.a`
@@ -99,11 +117,12 @@ export const ExternalLinks = styled.a`
 
 export const TagList = styled.ul`
     display: flex;
-    justify-content: space-around;
-    padding: 2rem;
+    justify-content: center;
+    padding: 1.5rem;
 `
 
 export const Tag = styled.li`
     color: #d8bfbf;
     font-size: 1.5rem;
+    margin: 0px 14px;
 `

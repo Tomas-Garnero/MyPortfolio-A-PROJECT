@@ -3,12 +3,12 @@ import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
 const Technologies = () => (
-    <Section id="#tech">
+    <Section id="tech">
         <SectionDivider />
         <br />
-        <SectionTitle>Technologies</SectionTitle>
+        <SectionTitle main style={{paddingTop: "3.7rem"}}>Technologies</SectionTitle>
         <SectionText>
-            I've worked with a range a technnologies in the web development world. From Back-end To Design.
+            I've worked with a range a technologies in the web development world. From Back-end To Front-end throught the UI/UX.
         </SectionText>
         <List>
             <ListItem>
@@ -27,7 +27,7 @@ const Technologies = () => (
                     <ListTitle>Back-End</ListTitle>
                     <ListParagraph>
                         Experience with <br />
-                        Node.js and Databases
+                        Node.js and DB
                     </ListParagraph>
                 </ListContainer>
             </ListItem>

@@ -3,18 +3,16 @@ import styled from 'styled-components'
 export const CarouselContainer = styled.ul`
     max-width: 1040px;
     background: #0F1624;
-    padding: 0rem;
     list-style:none;
     display: flex;
-    justify-content: space-between; 
-    /* overflow-x: hidden; */
+    justify-content: space-around; 
+    align-items: center;
 
-    margin-left: 32px;
     &:first-of-type{
         margin-left: 0px;
     }
 
-    margin-bottom: 80px;
+    margin-bottom: 60px;
 
     //remove scrollbar
     scrollbar-width: none;  
@@ -40,9 +38,17 @@ export const CarouselMobileScrollNode = styled.div`
 `
 
 export const CarouselItem = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     background: #0F1624;
-    border-radius: 3px;
-    max-width: 196px;
+    width: 200px;
+    height: 120px;
+
+    border-radius: 10px;
+    box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
 
     @media ${props => props.theme.breakpoints.md} {
         max-width: 124px;
@@ -65,11 +71,17 @@ export const CarouselItem = styled.div`
 `
 
 export const CarouselItemTitle = styled.h4`
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px;
     font-weight: bold;
     font-size: 24px;
     line-height: 32px;
     letter-spacing: 0.02em;
-    display: flex;
+
     /* This gradient is different due to the size of the Title container, it must transition sooner to be visible on the text */
     background: linear-gradient(121.57deg, #FFFFFF 10%, rgba(255, 255, 255, 0.66) 30.15%);
     -webkit-background-clip: text;
@@ -102,20 +114,19 @@ export const CarouselItemImg = styled.svg`
 
 export const CarouselItemText = styled.p`
     font-size: 14px;
-    line-height: 22px;
     letter-spacing: 0.02em;
     color: rgba(255, 255, 255, 0.75);
-    padding-right: 16px;
+    padding: 5px;
 
     @media ${props => props.theme.breakpoints.md} {
         font-size: 12px;
         line-height: 18px;
-        padding-right: 32px;
+        padding: 10px;
     }
     @media ${props => props.theme.breakpoints.sm} {
         font-size: 10px;
         line-height: 16px;
-        padding-right: 0;
+        padding: 0;
     }
 `
 

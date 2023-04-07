@@ -7,7 +7,7 @@ const BackgroundAnimation = () => (
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
         >
-            <g opacity="0.15">
+            <g opacity="0.2">
                 <path
                     fillRule="evenodd"
                     clipRule="evenodd"

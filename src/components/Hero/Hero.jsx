@@ -12,7 +12,7 @@ const Hero = () => (
             <SectionText>
                 Full Stack Developer with a background as a Web Designer. Experience working with React, Redux, NodeJS, SQL, Express and agile methodologies. I have full confidence in my ability to produce ideas and lead teams.
             </SectionText>
-            <Button onClick={() => window.location = "https://google.com"}>
+            <Button onClick={() => window.location = "https://www.linkedin.com/in/tomas-garnero/"}>
                 Learn More
             </Button>
         </LeftSection>

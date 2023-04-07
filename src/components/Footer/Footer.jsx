@@ -18,7 +18,7 @@ const Footer = () => {
             <LinkList>
                 <LinkColumn>
                     <LinkTitle>Call</LinkTitle>
-                    <LinkItem href="tel:111-111-1111">111-111-1111</LinkItem>
+                    <LinkItem href="tel:+54 351 4595592">+54 351 4595592</LinkItem>
                 </LinkColumn>
                 <LinkColumn>
                     <LinkTitle>Email</LinkTitle>
@@ -29,17 +29,17 @@ const Footer = () => {
                 <CompanyContainer>
                     <Slogan>Innovating one project at a time</Slogan>
                 </CompanyContainer>
-                <SocialContainer>
-                    <SocialIcons href="https://github.com">
-                        <AiFillGithub size="3rem" />
-                    </SocialIcons>
-                    <SocialIcons href="https://linkedin.com">
-                        <AiFillLinkedin size="3rem" />
-                    </SocialIcons>
-                    <SocialIcons href="https://instagram.com">
-                        <AiFillInstagram size="3rem" />
-                    </SocialIcons>
-                </SocialContainer>
+                <SocialIconsContainer>
+                        <SocialIcons href="https://github.com/Tomas-Garnero">
+                            <AiFillGithub size="3rem" />
+                        </SocialIcons>
+                        <SocialIcons href="https://www.linkedin.com/in/tomas-garnero/">
+                            <AiFillLinkedin size="3rem" />
+                        </SocialIcons>
+                        <SocialIcons href="https://www.instagram.com/tomygarnero/">
+                            <AiFillInstagram size="3rem" />
+                        </SocialIcons>
+                </SocialIconsContainer>
             </SocialContainer>
         </FooterWrapper>
     );

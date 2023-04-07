@@ -1,8 +1,6 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import Theme from "./styles/Theme";
-import { Header, Footer } from "./components";
 import Home from "./pages/Home";
-import './App.css'
 
 function App() {
 
@@ -17,4 +15,4 @@ function App() {
     )
 }
 
-export default App
+export default App;
